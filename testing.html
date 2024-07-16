@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <title>好棒棒</title>
+        <style>
+            p{
+                font-size: 20px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="
+            console.log(`目前購物車總額：${totalPrice}`)">購物車金額</button>
+        <button onclick="
+        totalPrice = 0
+        console.log(`目前購物車總額：${totalPrice}`)">清空購物車</button>
+        <br/>
+        <br/>
+        <img src="shampoo.jpg" height="190dp"/>
+        <br/>
+        <p>$100</p>
+        <button onclick="
+        totalPrice+=100
+        console.log(`目前購物車總額：${totalPrice}`)">加入購物車</button>
+        <br/>
+
+        <img src="bodywash.jpg" height="190dp"/>
+        <br/>
+        <p>$130</p>
+        <button onclick="
+        totalPrice+=130
+        console.log(`目前購物車總額：${totalPrice}`)">加入購物車</button>
+        <br/>
+
+        <img src="soap.png" height="190dp"/>
+        <br/>
+        <p>$150</p>
+        <button onclick="
+        totalPrice+=150
+        console.log(`目前購物車總額：${totalPrice}`)">加入購物車</button>
+
+
+        <script>
+            let totalPrice = 0;
+        </script>
+    </body>
+</html>
